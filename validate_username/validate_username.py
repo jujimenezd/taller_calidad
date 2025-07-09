@@ -4,9 +4,9 @@ from string import ascii_lowercase
 def is_valid_username(username: str) -> bool:
     username = username.lower()
     punctuation = r"""!"#$%&'()*+,-./:;<=>?@[\]^`{|}~"""
-    for i in username:
-        if i in punctuation:
-            print(i)
+    for character in username:
+        if character in punctuation:
+            print(character)
             return False
 
     if username == "":

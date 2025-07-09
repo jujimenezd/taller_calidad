@@ -1,5 +1,5 @@
 import pytest
-from validate_username.main import is_valid_username
+from validate_username.validate_username import is_valid_username
 
 
 @pytest.mark.parametrize(
