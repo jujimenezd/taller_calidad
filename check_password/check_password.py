@@ -40,7 +40,3 @@ def check_password(password: str):
         return True
     else:
         return False
-
-
-result = check_password("Software$_EnginneR")
-print(result)
