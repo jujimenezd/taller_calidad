@@ -1,14 +1,13 @@
-def get_divisors(number: int):
+def get_divisors(number: int) -> list:
     divisors = []
 
     for i in range(1, number):
         if number % i == 0:
             divisors.append(i)
-
     return divisors
 
 
-def perfect_numbers(number: int):
+def perfect_numbers(number: int) -> list:
     list_perfect_numbers = []
 
     if number <= 0:

@@ -15,7 +15,7 @@ roman_representation = {
 }
 
 
-def number_to_roman(number):
+def number_to_roman(number: int) -> str:
     roman_expression = ""
 
     if number <= 0 or number >= 4000:

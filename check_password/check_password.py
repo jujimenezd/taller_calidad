@@ -1,7 +1,7 @@
 from string import ascii_letters, digits, punctuation
 
 
-def check_contiditions(password: str):
+def check_contiditions(password: str) -> bool:
     password_with_digit = False
     password_with_letters = False
     password_with_symbols = False
@@ -27,7 +27,7 @@ def check_contiditions(password: str):
         return False
 
 
-def check_password(password: str):
+def check_password(password: str) -> bool:
     for character in password:
         if character == " ":
             return False
