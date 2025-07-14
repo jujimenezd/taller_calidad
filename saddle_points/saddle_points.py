@@ -2,20 +2,14 @@ import numpy as np
 
 
 def saddle_points(matrix: list[list[int]]) -> list[tuple[int, int]]:
-    if len(matrix) < 1:
-        return []
-    # Check if matrix is empty
     if not matrix:
         return []
 
-    # Check if matrix is rectangular (all rows have the same length)
     row_lengths = [len(row) for row in matrix]
     if len(set(row_lengths)) > 1:
         raise ValueError("irregular matrix")
 
     matrix = np.array(matrix)
-    # print(matrix)
-    # print()
 
     rows = matrix.shape[0]
     columns = matrix.shape[1]
