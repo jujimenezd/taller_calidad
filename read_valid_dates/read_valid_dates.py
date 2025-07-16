@@ -1,4 +1,5 @@
 from datetime import datetime
+import os
 
 
 def format_date(date: str) -> str:
@@ -64,5 +65,9 @@ def read_valid_dates(file_path: str) -> list:
     return valid_dates
 
 
-dates = read_valid_dates("fechas.txt")
+# Usar la ruta relativa a la carpeta read_valid_dates
+directory = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(directory, "fechas.txt")
+
+dates = read_valid_dates(file_path)
 print(dates)
